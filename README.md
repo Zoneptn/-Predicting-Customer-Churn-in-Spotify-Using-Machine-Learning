@@ -80,7 +80,7 @@ Each model was evaluated under four configurations:
 ### 🔍 SHAP Analysis Insights
 The SHAP (SHapley Additive exPlanations) analysis provided valuable interpretability for the models.  
 Global feature importance plots revealed that **device type**, **subscription level**, and **country** were among the most influential drivers of churn.  
-Waterfall plots for individual predictions highlighted how specific user characteristics (e.g., mobile usage, free subscription, high skip rate) contributed positively to the churn probability.  
+Waterfall plots for individual predictions highlighted how specific user characteristics contributed positively to the churn probability.  
 These insights help translate the model outputs into actionable business strategies for customer retention.
 
 ---
