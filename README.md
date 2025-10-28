@@ -93,7 +93,7 @@ Although accuracy is lower, this trade-off aligns with real-world business needs
 ---
 
 ## 🧰 Tech Stack
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn,imblearn, SHAP  
+- **Python:** kagglehub, imblearn, NumPy, Matplotlib,os, Pandas, Seaborn, Scikit-learn, SHAP, xgboost
 - **Tools:** Jupyter Notebook, VS Code  
 - **Version Control:** GitHub
 
