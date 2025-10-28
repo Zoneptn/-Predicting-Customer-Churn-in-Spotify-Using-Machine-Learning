@@ -11,10 +11,24 @@ This project objective is to predict **customer churn** using using various **ma
 - **Target Variable:** `churn` (1 = churned, 0 = retained)  
 
 **Feature Types:**
-- Demographic features (e.g., `gender`, `country`)  
-- Device usage (`device_type_Web`, `device_type_Mobile`)  
-- User behavior (`songs_played_per_day`, `skip_rate`, `listening_time`)
+**1️⃣ Demographic Features**
+- `user_id` — Unique user identifier  
+- `age` — Age of the user  
+- `gender_Male`, `gender_Other` — Gender categories (encoded as dummy variables)  
+- `country_CA`, `country_DE`, `country_FR`, `country_IN`, `country_PK`, `country_UK`, `country_US` — User country (one-hot encoded)
 
+**2️⃣ Usage Behavior**
+- `listening_time` — Total time spent listening to music (per week or per session)  
+- `songs_played_per_day` — Average number of songs played per day  
+- `skip_rate` — Ratio of skipped songs to total songs  
+- `ads_listened_per_week` — Number of ads listened to per week  
+- `offline_listening` — Indicator for offline listening behavior (1 = yes, 0 = no)
+
+**3️⃣ Subscription Information**
+- `subscription_type_Free`, `subscription_type_Premium`, `subscription_type_Student` — Subscription tiers (one-hot encoded)
+
+**4️⃣ Device Information**
+- `device_type_Mobile`, `device_type_Web` — Type of device used for streaming
 ---
 
 ## ⚙️ Workflow
