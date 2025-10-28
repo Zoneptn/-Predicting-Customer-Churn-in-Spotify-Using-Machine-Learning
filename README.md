@@ -98,3 +98,11 @@ Although accuracy is lower, this trade-off aligns with real-world business needs
 - **Version Control:** GitHub
 
 ---
+## 🧰 Installation
+To run this notebook locally:
+
+```bash
+git clone https://github.com/Zoneptn/-Predicting-Customer-Churn-in-Spotify-Using-Machine-Learning.git
+cd Predicting-Customer-Churn-in-Spotify-Using-Machine-Learning
+pip install -r requirements.txt
+
