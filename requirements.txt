@@ -1,0 +1,18 @@
+# Data handling
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine learning models and tools
+scikit-learn
+xgboost
+imblearn  # For SMOTE (oversampling)
+
+# Explainability
+shap
+
+# Dataset downloader (Kaggle integration)
+kagglehub
