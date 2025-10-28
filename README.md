@@ -6,7 +6,7 @@ This project objective is to predict **customer churn** using using various **ma
 ---
 
 ## 🗂️ Dataset
-- **Source:** [Describe your data source — e.g., internal user activity data, simulated data, or open dataset.]  
+- **Source:** [Spotify Dataset for Churn Analysis (Kaggle)](https://www.kaggle.com/datasets/nabihazahid/spotify-dataset-for-churn-analysis/data)
 - **Size:** ~8,000 observations × 22 features  
 - **Target Variable:** `churn` (1 = churned, 0 = retained)  
 
@@ -76,6 +76,12 @@ Each model was evaluated under four configurations:
 | Decision Tree | Threshold 0.2 | 0.96 | 0.27 | 0.49 |
 
 > Threshold adjustment dramatically improved recall, showing that lowering the cutoff helps identify more churners, even at the cost of accuracy.
+
+### 🔍 SHAP Analysis Insights
+The SHAP (SHapley Additive exPlanations) analysis provided valuable interpretability for the models.  
+Global feature importance plots revealed that **device type**, **subscription level**, and **country** were among the most influential drivers of churn.  
+Waterfall plots for individual predictions highlighted how specific user characteristics (e.g., mobile usage, free subscription, high skip rate) contributed positively to the churn probability.  
+These insights help translate the model outputs into actionable business strategies for customer retention.
 
 ---
 
