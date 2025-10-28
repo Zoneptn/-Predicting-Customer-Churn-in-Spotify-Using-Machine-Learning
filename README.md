@@ -15,7 +15,7 @@ This project objective is to predict **customer churn** using using various **ma
 - `user_id` — Unique user identifier  
 - `age` — Age of the user  
 - `gender_Male`, `gender_Other` — Gender categories (encoded as dummy variables)  
-- `country_CA`, `country_DE`, `country_FR`, `country_IN`, `country_PK`, `country_UK`, `country_US` — User country (one-hot encoded)
+- `country_CA`, `country_DE`, `country_FR`, `country_IN`, `country_PK`, `country_UK`, `country_US` — User country 
 
 **2️⃣ Usage Behavior**
 - `listening_time` — Total time spent listening to music (per week or per session)  
@@ -25,7 +25,7 @@ This project objective is to predict **customer churn** using using various **ma
 - `offline_listening` — Indicator for offline listening behavior (1 = yes, 0 = no)
 
 **3️⃣ Subscription Information**
-- `subscription_type_Free`, `subscription_type_Premium`, `subscription_type_Student` — Subscription tiers (one-hot encoded)
+- `subscription_type_Free`, `subscription_type_Premium`, `subscription_type_Student` — Subscription tiers 
 
 **4️⃣ Device Information**
 - `device_type_Mobile`, `device_type_Web` — Type of device used for streaming
@@ -35,7 +35,7 @@ This project objective is to predict **customer churn** using using various **ma
 
 ### 🔹 Data Preprocessing
 - Missing values handled and categorical features encoded using **one-hot encoding**.  
-- Outliers treated using **IQR**.  
+- Outliers treated using **box plot** and **IQR**.  
 - Dataset split into **80% training** and **20% testing** sets.
 
 ### 🔹 Model Training
@@ -61,9 +61,9 @@ Each model was evaluated under four configurations:
 > Focus on **Recall**, since identifying churners is the main goal.
 
 ### 🔹 Model Interpretation
+-- **Global feature importance** identified top churn drivers.
 - Used **SHAP (SHapley Additive exPlanations)** to understand feature influence.  
 - **Waterfall plots** explain individual churn predictions.  
-- **Global feature importance** identified top churn drivers.
 
 ---
 
@@ -87,7 +87,7 @@ Although accuracy is lower, this trade-off aligns with real-world business needs
 ---
 
 ## 🧰 Tech Stack
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, SHAP  
+- **Python:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn,imblearn, SHAP  
 - **Tools:** Jupyter Notebook, VS Code  
 - **Version Control:** GitHub
 
